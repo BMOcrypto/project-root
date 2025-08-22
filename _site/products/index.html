@@ -1,0 +1,17 @@
+<!-- Products index template -->
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Our Products</h1>
+
+<div class="product-grid">
+    {% for product in products %}
+    <div class="product-card">
+        <img src="{{ product.image_url }}" alt="{{ product.title }}">
+        <h2>{{ product.title }}</h2>
+        <p class="price">${{ product.price }}</p>
+        <a href="/products/{{ product.title|slugify }}.html" class="btn">View Details</a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

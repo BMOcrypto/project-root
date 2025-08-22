@@ -1,0 +1,27 @@
+<!-- Blog post template -->
+{% extends "base.html" %}
+
+{% block content %}
+<article class="blog-post">
+    <h1>{{ post.title }}</h1>
+    <div class="post-meta">
+        <time datetime="{{ post.publish_date }}">{{ post.publish_date }}</time> by {{ post.author }}
+    </div>
+    <div class="post-content">
+        {{ post.content }}
+    </div>
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ post.title }}",
+  "datePublished": "{{ post.publish_date }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ post.author }}"
+  }
+}
+</script>
+{% endblock %}
