@@ -1,0 +1,4 @@
+sku,title,description,price,thumbnail_url,product_url,tags,status,publish_date
+PROD-001,Python Programming Sticker,"High-quality vinyl sticker with Python logo. Perfect for laptops and water bottles.",4.99,https://via.placeholder.com/300x300/3776AB/FFFFFF?text=Python+Sticker,https://gumroad.com/l/python-sticker,"python,programming,sticker",published,2024-01-15
+PROD-002,Developer Coffee Mug,"Ceramic mug with 'Hello World' design. Dishwasher and microwave safe.",12.50,https://via.placeholder.com/300x300/000000/FFFFFF?text=Dev+Mug,https://gumroad.com/l/dev-mug,"coffee,programming,mug",published,2024-01-20
+PROD-003,Algorithm Thinking Poster,"Beautiful poster explaining common algorithms. Printed on premium matte paper.",19.99,https://via.placeholder.com/300x300/FFFFFF/000000?text=Poster+Coming+Soon,https://gumroad.com/l/algo-poster,"algorithms,education,poster",draft,2024-02-01

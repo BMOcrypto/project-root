@@ -1,0 +1,28 @@
+<!-- Product page template -->
+{% extends "base.html" %}
+
+{% block content %}
+<article class="product-detail">
+    <img src="{{ product.image_url }}" alt="{{ product.title }}">
+    <h1>{{ product.title }}</h1>
+    <p class="price">${{ product.price }}</p>
+    <div class="description">
+        {{ product.description }}
+    </div>
+    <a href="{{ product.external_url }}" class="btn">Purchase on External Platform</a>
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "{{ product.title }}",
+  "description": "{{ product.description }}",
+  "offers": {
+    "@type": "Offer",
+    "price": "{{ product.price }}",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+{% endblock %}

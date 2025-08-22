@@ -1,0 +1,25 @@
+# /data/store.yml
+# Site Configuration
+site_name: CodeCraft Merch
+site_tagline: Quality Developer Products & Resources
+site_url: https://yourusername.github.io  # Replace with your GitHub Pages URL
+currency_symbol: "$"
+owner_name: Alex Developer
+owner_email: alex@example.com
+
+# Design
+brand_color: "#2563eb"  # blue-600
+accent_color: "#f59e0b" # amber-500
+
+# SEO
+description: "Shop quality developer merchandise and learn programming tips. Stickers, mugs, and educational content for developers."
+
+# Newsletter
+newsletter_provider: "mailchimp"  # Options: mailchimp, convertkit, substack
+newsletter_action: "https://example.us21.list-manage.com/subscribe/post?u=xxx"
+
+# Social Links
+social:
+  twitter: "https://twitter.com/yourusername"
+  linkedin: "https://linkedin.com/in/yourusername"
+  instagram: "https://instagram.com/yourusername"

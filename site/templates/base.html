@@ -1,0 +1,31 @@
+<!-- Base template -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - {{ site_title }}</title>
+    <meta name="description" content="{{ description }}">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="canonical" href="{{ canonical_url }}">
+    <!-- JSON-LD structured data will be added by individual pages -->
+</head>
+<body>
+    <header>
+        <h1><a href="/">{{ site_title }}</a></h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/products/">Products</a>
+            <a href="/blog/">Blog</a>
+        </nav>
+    </header>
+    
+    <main>
+        {{ content }}
+    </main>
+    
+    <footer>
+        <p>&copy; {{ year }} {{ site_title }}. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!-- Blog index template -->
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Blog</h1>
+
+<div class="post-list">
+    {% for post in posts %}
+    <article class="post-preview">
+        <h2><a href="/blog/{{ post.title|slugify }}.html">{{ post.title }}</a></h2>
+        <div class="post-meta">
+            <time datetime="{{ post.publish_date }}">{{ post.publish_date }}</time> by {{ post.author }}
+        </div>
+        <p>{{ post.excerpt }}</p>
+        <a href="/blog/{{ post.title|slugify }}.html">Read more</a>
+    </article>
+    {% endfor %}
+</div>
+{% endblock %}
